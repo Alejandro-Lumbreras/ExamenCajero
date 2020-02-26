@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.Controller">
+    <scene>
+        <Scene fill="#322997">
+            <AnchorPane prefHeight="330.0" prefWidth="489.0" style="-fx-background-color: #322997;">
+            <children>
+               <Label layoutX="118.0" layoutY="47.0" text="SELECCIONE UNA OPCION" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Mono" size="20.0" />
+                  </font></Label>
+               <Button fx:id="btnVolver" layoutX="191.0" layoutY="257.0" mnemonicParsing="false" onAction="#Volver" style="-fx-background-color: #ff5500;" text="VOLVER" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Fallback" size="20.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnAgua" layoutX="32.0" layoutY="93.0" mnemonicParsing="false" onAction="#pagarAgua" style="-fx-background-color: #ff5500;" text="AGUA" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Fallback" size="20.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnLuz" layoutX="211.0" layoutY="93.0" mnemonicParsing="false" onAction="#pagarLuz" style="-fx-background-color: #ff5500;" text="LUZ" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Fallback" size="20.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnCable" layoutX="371.0" layoutY="93.0" mnemonicParsing="false" onAction="#pagarCable" style="-fx-background-color: #ff5500;" text="CABLE" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Fallback" size="20.0" />
+                  </font>
+               </Button>
+            </children>
+            </AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

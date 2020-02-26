@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.FController">
+    <scene>
+        <Scene fill="#322997">
+            <AnchorPane prefHeight="360.0" prefWidth="700.0" style="-fx-background-color: #322997;">
+            <children>
+               <ImageView fitHeight="357.0" fitWidth="702.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@Imagenes/botones.png" />
+                  </image>
+               </ImageView>
+               <Button onAction="#Retirar" fx:id="btnRetirar" blendMode="DARKEN" layoutX="7.0" layoutY="4.0" mnemonicParsing="false" prefHeight="322.0" prefWidth="316.0" textAlignment="CENTER">
+                  <font>
+                     <Font size="40.0" />
+                  </font>
+               </Button>
+               <Button  onAction="#Consulta" fx:id="btnConsulta" blendMode="DARKEN" layoutX="323.0" layoutY="4.0" mnemonicParsing="false" prefHeight="158.0" prefWidth="190.0" textFill="#080000" >
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Button>
+               <Button onAction="#Transferencia" fx:id="btnTransferencia" blendMode="DARKEN" layoutX="323.0" layoutY="162.0" mnemonicParsing="false" prefHeight="165.0" prefWidth="190.0" />
+               <Button onAction="#CambiarNIP" fx:id="btnCambiarNIP" blendMode="DARKEN" layoutX="520.0" layoutY="6.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="180.0" />
+               <Button onAction="#Pago" fx:id="btnPago" blendMode="DARKEN" layoutX="520.0" layoutY="70.0" mnemonicParsing="false" prefHeight="173.0" prefWidth="180.0" />
+            </children>
+            </AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

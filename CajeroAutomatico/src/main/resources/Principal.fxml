@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.FController">
+    <scene>
+        <Scene fill="#322997">
+            <AnchorPane prefHeight="330.0" prefWidth="700.0" style="-fx-background-color: #322997;">
+            <children>
+               <ImageView fitHeight="228.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                  <image>
+                     <Image url="@Imagenes/Logo.jpg" />
+                  </image>
+               </ImageView>
+               <Label layoutX="250.0" layoutY="14.0" text="BANCORRE" textFill="#ff5500">
+                  <font>
+                     <Font name="DejaVu Serif Bold" size="65.0" />
+                  </font>
+               </Label>
+               <TextField  fx:id="txt_NumeroCuenta" layoutX="112.0" layoutY="227.0" promptText="Numero de cuenta" />
+               <Label layoutX="68.0" layoutY="195.0" text="Ingresa tu numero de cuenta" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Mono" size="16.0" />
+                  </font>
+               </Label>
+               <Label layoutX="436.0" layoutY="195.0" text="Ingresa tu NIP" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Mono" size="16.0" />
+                  </font>
+               </Label>
+               <PasswordField fx:id="txt_NIP" layoutX="418.0" layoutY="227.0" promptText="NIP" />
+               <Button fx:id="btn_Entrar" layoutX="301.0" layoutY="275.0" mnemonicParsing="false" onAction="#Entrar" style="-fx-background-color: #ff5500;" text="ENTRAR" textAlignment="CENTER" textFill="WHITE">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Button>
+            </children>
+            </AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

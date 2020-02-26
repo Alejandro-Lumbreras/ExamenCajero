@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.Controller">
+    <scene>
+        <Scene fill="#322997">
+            <AnchorPane prefHeight="266.0" prefWidth="377.0" style="-fx-background-color: #322997;">
+            <children>
+               <Label layoutX="92.0" layoutY="37.0" text="SALDO DISPONIBLE" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Mono" size="20.0" />
+                  </font></Label>
+               <TextField fx:id="txt_Saldo" alignment="CENTER" editable="false" layoutX="147.0" layoutY="77.0" prefHeight="26.0" prefWidth="85.0" />
+               <Label layoutX="133.0" layoutY="78.0" text="\$" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Mono" size="20.0" />
+                  </font>
+               </Label>
+               <Button fx:id="btnVolver" layoutX="24.0" layoutY="165.0" mnemonicParsing="false" onAction="#Volver" style="-fx-background-color: #ff5500;" text="VOLVER" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Fallback" size="20.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btnRetirar" layoutX="238.0" layoutY="165.0" mnemonicParsing="false" onAction="#Retirar" style="-fx-background-color: #ff5500;" text="RETIRAR" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Fallback" size="20.0" />
+                  </font>
+               </Button>
+               <Button fx:id="Consulta" layoutX="127.0" layoutY="111.0" mnemonicParsing="false" onAction="#ConsultarSaldo" style="-fx-background-color: #ff5500;" text="Consultar" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Fallback" size="20.0" />
+                  </font>
+               </Button>
+            </children>
+            </AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

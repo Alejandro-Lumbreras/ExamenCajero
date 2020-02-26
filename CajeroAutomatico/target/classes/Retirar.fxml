@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.Controller">
+    <scene>
+        <Scene fill="#322997">
+            <AnchorPane prefHeight="330.0" prefWidth="436.0" style="-fx-background-color: #322997;">
+            <children>
+               <Button fx:id="btn100" layoutX="32.0" layoutY="152.0" mnemonicParsing="false" onAction="#Retirar100" style="-fx-background-color: #ff5500;" text="\$100" textAlignment="CENTER" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Fallback" size="20.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btn200" layoutX="32.0" layoutY="208.0" mnemonicParsing="false" onAction="#Retirar200" style="-fx-background-color: #ff5500;" text="\$200" textAlignment="CENTER" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Fallback" size="20.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btn500" layoutX="127.0" layoutY="152.0" mnemonicParsing="false" onAction="#Retirar500" style="-fx-background-color: #ff5500;" text="\$500" textAlignment="CENTER" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Fallback" size="20.0" />
+                  </font>
+               </Button>
+               <Button fx:id="btn1000" layoutX="127.0" layoutY="208.0" mnemonicParsing="false" onAction="#Retirar1000" style="-fx-background-color: #ff5500;" text="\$1000" textAlignment="CENTER" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Fallback" size="20.0" />
+                  </font>
+               </Button>
+               <TextField fx:id="txt_MontoRetirar" alignment="CENTER" layoutX="154.0" layoutY="76.0" onAction="#MontoRetirar" prefHeight="39.0" prefWidth="104.0" promptText="\$0.">
+                  <font>
+                     <Font name="Droid Sans Mono" size="20.0" />
+                  </font>
+               </TextField>
+               <Button fx:id="btnContinuar" layoutX="274.0" layoutY="197.0" mnemonicParsing="false" onAction="#Continuar" style="-fx-background-color: #ff5500;" text="CONTINUAR" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Fallback" size="20.0" />
+                  </font>
+               </Button>
+               <Label layoutX="35.0" layoutY="47.0" text="INGRESE EL MONTO A RETIRAR" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Mono" size="24.0" />
+                  </font>
+               </Label>
+               <Button fx:id="btnVolver" layoutX="313.0" layoutY="253.0" mnemonicParsing="false" onAction="#Volver" style="-fx-background-color: #ff5500;" text="VOLVER" textFill="WHITE">
+                  <font>
+                     <Font name="Droid Sans Fallback" size="20.0" />
+                  </font>
+               </Button>
+            </children>
+            </AnchorPane>
+        </Scene>
+    </scene>
+</Stage>
